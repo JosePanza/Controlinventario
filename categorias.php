@@ -14,7 +14,7 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head>S
     <?php include("head.php");?>
   </head>
   <body>
@@ -27,6 +27,7 @@
 		<div class="panel-heading">
 		    <div class="btn-group pull-right">
 				<button type='button' class="btn btn-success" data-toggle="modal" data-target="#nuevoCliente"><span class="glyphicon glyphicon-plus" ></span> Nueva Categoría</button>
+				<a href="#" id="export_csv" class="btn btn-default" title="Exportar CSV"><span class="glyphicon glyphicon-download"></span> Exportar CSV</a>
 			</div>
 			<h4><i class='glyphicon glyphicon-search'></i> Buscar Categorías</h4>
 		</div>

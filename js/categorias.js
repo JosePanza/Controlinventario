@@ -92,5 +92,13 @@ $( "#editar_categoria" ).submit(function( event ) {
 	  modal.find('.modal-body #mod_descripcion').val(descripcion) 
 	  modal.find('.modal-body #mod_id').val(id)
 	})
+
+// Export CSV handler
+$(document).on('click', '#export_csv', function(e){
+    e.preventDefault();
+    var q = $('#q').val();
+    var url = 'ajax/export_categorias.php?q=' + encodeURIComponent(q);
+    window.location = url;
+});
 		
 
